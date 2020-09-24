@@ -9,7 +9,8 @@ func ExampleAvg ()  {
 	payments :=[]types.Payment{
 		{ID: 2,
 		Amount: 36_00,
-		Category: "Cat", },
+		Category: "Cat",
+	    Status:    "OK" },
 		{ID: 2,
 		Amount: 24_00,
 		Category: "Cat", },
