@@ -1,7 +1,8 @@
 package stats
 
 import (
-	"github.com/hirs-500/bank/pkg/types"
+	"github.com/hirs-500/bank/v2/pkg/types"
+	
 )
 
 // Avg рассчитывает среднюю сумму платежа 

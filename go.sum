@@ -2,3 +2,7 @@ github.com/hirs-500/bank v0.0.0-20200924111030-b0adfd54f881 h1:+kum0Sf/ZZj4ffStl
 github.com/hirs-500/bank v0.0.0-20200924111030-b0adfd54f881/go.mod h1:RlzJaAw1bfwY0oPiF3WFUBa9cUJnnt9N7GUy6ikmF7s=
 github.com/hirs-500/bank v0.0.0-20200924114753-e3ee139a2a5d h1:WTw5u77rRWEeqlj30F3Ti4QU6iQeWoWY+bRpNjO9L1g=
 github.com/hirs-500/bank v0.0.0-20200924114753-e3ee139a2a5d/go.mod h1:RlzJaAw1bfwY0oPiF3WFUBa9cUJnnt9N7GUy6ikmF7s=
+github.com/hirs-500/bank v1.0.0 h1:EPDHtxdGCRvpxqCSZWytOkhZNXzR71AO8pnP2HU7Vxw=
+github.com/hirs-500/bank v1.0.0/go.mod h1:RlzJaAw1bfwY0oPiF3WFUBa9cUJnnt9N7GUy6ikmF7s=
+github.com/hirs-500/bank/v2 v2.0.0 h1:jFU0JHEB9U9hKfRmDzl0Ku9hIele0FSu4nntVt9eZkc=
+github.com/hirs-500/bank/v2 v2.0.0/go.mod h1:LaXBHLVjSSnE5zmc1QDHZV8iZy1mUM/CiWzv4q57FH4=
