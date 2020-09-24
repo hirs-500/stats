@@ -2,7 +2,7 @@ package stats
 
 import (
 	"fmt"
-	"github.com/hirs-500/bank/pkg/bank/types"
+	"github.com/hirs-500/bank/pkg/types"
 )
 func ExampleAvg ()  {
 	payments :=[]types.Payment{

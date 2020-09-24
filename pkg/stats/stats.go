@@ -1,7 +1,7 @@
 package stats
 
 import (
-	"github.com/hirs-500/bank/pkg/bank/types"
+	"github.com/hirs-500/bank/pkg/types"
 )
 
 // Avg рассчитывает среднюю сумму платежа 
@@ -14,7 +14,7 @@ func Avg (payments []types.Payment)  types.Money {
 		 return total/types.Money(payment)
 		 
 	 }
-	 //  TotalInCategory - находить сумму пакупок определённой котегории
+	 //TotalInCategory - находить сумму пакупок определённой котегории
 	 func TotalInCategory(payments []types.Payment, category types.Category ) types.Money {
 		var categorySum types.Money
 		for _, v := range payments {
