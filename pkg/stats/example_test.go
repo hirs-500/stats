@@ -10,31 +10,37 @@ func ExampleAvg ()  {
 		{ID: 2,
 		Amount: 36_00,
 		Category: "Cat",
-	    Status:    "OK" },
+	    Status:     "FAIL",},
 		{ID: 2,
 		Amount: 24_00,
-		Category: "Cat", },
+		Category: "Cat",
+		Status:    "OK", 
+	      },
 		{ID: 2,
 		Amount: 52_00,
-		Category: "Cat", },
+		Category: "Cat",
+	    Status:    "OK" },
 	}
-	fmt.Println(Avg(payments))
-	// Output: 3733
+	fmt.Println(Avg(payments ))
+	// Output: 2533
 }
 
 func ExampleTotalCategory ()  {
 	payments := []types.Payment{
 		{ID:     1,
 		Amount:  52_00,
-		Category: "Club",},
+		Category: "Club",
+	     Status:  "FAIL",},
 		{ID:     1,
 		Amount:  48_00,
-		Category: "Club",},
+		Category: "Club",
+	    Status:   "OK",},
 		{ID:     1,
 		Amount:  52_00,
-		Category: "Cafe",},}
+		Category: "Cafe",
+		Status:  "OK",},}
 		
 		fmt.Println(TotalInCategory(payments, "Club"))
-		// Output: 10000
+		// Output: 4800
 
 }
