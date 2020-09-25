@@ -8,21 +8,22 @@ import (
 // Avg рассчитывает среднюю сумму платежа 
 func Avg (payments []types.Payment )  types.Money {
 	 var total types.Money
-	 payment := len(payments)
+	 i := 0
 	 for _, v := range payments {
 		 if v.Status == types.StatusFail{
 			 continue
 		 }
-		 total+= v.Amount}
+		 total+= v.Amount
+		i++}
 		 
-		 return total/types.Money(payment)
+		 return total/types.Money(i)
 		 
 	 }
 	 //TotalInCategory - находить сумму пакупок определённой котегории
 	 func TotalInCategory(payments []types.Payment, category types.Category) types.Money {
 		var categorySum types.Money
 		for _, v := range payments {
-			if  v.Status ==types.StatusFail {
+			if  v.Status == types.StatusFail {
 			 continue }
 			if v.Category == category{
 				categorySum+=v.Amount

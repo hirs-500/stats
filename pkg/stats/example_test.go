@@ -22,7 +22,7 @@ func ExampleAvg ()  {
 	    Status:    "OK" },
 	}
 	fmt.Println(Avg(payments ))
-	// Output: 2533
+	// Output: 3800
 }
 
 func ExampleTotalCategory ()  {
