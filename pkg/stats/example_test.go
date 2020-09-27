@@ -65,3 +65,23 @@ result := CategoriesAvg(payments)
 if !reflect.DeepEqual(expected,result){
 	t.Errorf("invalid result, expected: %v, actual: %v", expected, result)}
 }
+func TestPeriodDynamic_positive (t *testing. T)  {
+	first := map[types.Category]types.Money{
+		"auto": 25,
+		 "food": 35,
+		}
+	second :=map[types.Category]types.Money{
+		"auto": 45,
+		"food": 55,
+		}
+
+	
+	expected :=map[types.Category] types.Money {
+		"auto": 20,
+		"food": 20,
+	}
+	difference :=PeriodsDynamic(first, second)
+	if !reflect.DeepEqual(expected, difference){
+		t.Errorf("difference > %v \n expected > %v", difference,expected)
+	}
+}
