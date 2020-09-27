@@ -60,7 +60,7 @@ func TestCategoriesAvguser(t *testing.T) {
 	expected := map[types.Category]types.Money{
 		"auto":2_666_66,
 		"food":2_000_00,
-		"fun" :5_000_00,	}
+		"fun" :5_000_00,}
 result := CategoriesAvg(payments)
 if !reflect.DeepEqual(expected,result){
 	t.Errorf("invalid result, expected: %v, actual: %v", expected, result)}
